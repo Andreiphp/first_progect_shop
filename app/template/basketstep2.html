@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="basketStep2">
+
+        <div class="users_data">
+            <h3>Contact Details</h3>
+            <span class="user_name">Name : <span class="u_name"></span></span>
+            <span class="user_name">LastName : <span class="u_lastname"></span></span>
+            <span class="user_name">Mail : <span class="u_mail"></span></span>
+            <span class="user_name">Address : <span class="u_address"></span></span>
+        </div>
+        <div class="delivery">
+            <h3>Delivery</h3>
+            <form>
+                <label for="contactChoice2">mail
+                    <input type="radio" id="contactChoice2" name="delivery" value="mail">
+                </label>
+                <label for="contactChoice1">courier
+                    <input checked type="radio" id="contactChoice1" name="delivery" value="courier">
+                </label>
+
+                <label for="contactChoice3">pickup
+                    <input type="radio" id="contactChoice3" name="delivery" value="pickup">
+                </label>
+            </form>
+        </div>
+        <div class="">
+            <textarea class="comment_to_order" placeholder="send message" maxlength="200"></textarea>
+        </div>
+
+
+    </div>
+    <div>
+        <div class="cart_total">
+                <span class="">
+                <span>Total price:</span>
+                <span class="total_price"></span>
+                </span>
+            <span class="total_qty">
+                <span> Total quantity:</span>
+                <span id="fff" class="count_cart"></span>
+                </span>
+        </div>
+    </div>
+    <div>
+        <button id="pay">order and pay</button>
+        <button id="reserve">reserve</button>
+    </div>
+</div>

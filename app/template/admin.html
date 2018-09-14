@@ -1,0 +1,69 @@
+<div class="container">
+    <div class="admin_content">
+        <span id="logout_admin">logout</span>
+        <span id="new_product">Add Product</span>
+        <div class="table_product">
+            <table>
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>count</th>
+                    <th>edit</th>
+                    <th>delete</th>
+                </tr>
+                </thead>
+                <tbody id="admin_pro" class="admin_products">
+
+                </tbody>
+            </table>
+            <div class="allLoad">the end of the download</div>
+        </div>
+        <div class="product_add">
+            <form id="edd_product" name="add_product" method="post">
+                <div class="form_group">
+                    <input type="text" name="title" id="title" placeholder="title" >
+                    <textarea name="discription" placeholder="discription" ></textarea>
+                    <textarea name="minidescription" placeholder="minidescription" ></textarea>
+                    <input type="number" name="count" placeholder="count">
+                    <input type="text" name="price" placeholder="price">
+                    <input type="file" name="file">
+                    <select id="category" name="category">
+                        <option>Basr-and-Snaks</option>
+                        <option>BCAA</option>
+                        <option>Clearanse</option>
+                        <option>Energy-and-Snaks</option>
+                        <option>Pre-workout</option>
+                        <option>Protein-Products</option>
+                        <option>Sport-Drinks</option>
+                    </select>
+                </div>
+                <input type="submit" value="add">
+            </form>
+        </div>
+        <div class="product_redact">
+            <form id="edit_product" name="edit_product" method="post">
+                <div class="form_group">
+                <input type="text" name="edit_title" id="edit_title" required>
+                <textarea name="edit_discription" id="edit_discription" placeholder="edit_discription" required></textarea>
+                <textarea name="edit_minidescription" id="edit_minidescription" placeholder="edit_minidescription" required></textarea>
+                <input type="number" name="edit_count" id="edit_count" placeholder="count">
+                    <input type="text" name="edit_price" id="edit_price" placeholder="price">
+                <input type="file" name="file">
+                <select id="edit_category" name="edit_category">
+                    <option>Basr-and-Snaks</option>
+                    <option>BCAA</option>
+                    <option>Clearanse</option>
+                    <option>Energy-and-Snaks</option>
+                    <option>Pre-workout</option>
+                    <option>Protein-Products</option>
+                    <option>Sport-Drinks</option>
+                </select>
+                <input type="submit" value="add">
+                </div>
+            </form>
+            <button type="button" id="closeEditForm">close</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <title>Online Shop</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="app/img/bidik-logo-favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <link rel="stylesheet" href="app/css/main.min.css">
+    <script defer src="app/js/settings.js"></script>
+    <script defer src="app/js/function.js"></script>
+    <script defer src="app/js/templatesClass.js"></script>
+    <script defer src="app/js/goodsClass.js"></script>
+    <script defer src="app/js/categoriesClass.js"></script>
+    <script defer src="app/js/paginationClass.js"></script>
+    <script defer src="app/js/sortingClass.js"></script>
+    <script defer src="app/js/searchClass.js"></script>
+    <script defer src="app/js/sliderClass.js"></script>
+    <script defer src="app/js/cartShopClass.js"></script>
+    <script defer src="app/js/userClass.js"></script>
+    <script defer src="app/js/ajaxAuth.js"></script>
+    <script defer src="app/js/admin.js"></script>
+    <script defer src="app/js/router.js"></script>
+    <script defer src="app/js/routerInit.js"></script>
+</head>
+<body>
+<div id="clockdiv"></div>
+<div id="register_position"></div>
+<div class="register">
+    <h2>Register</h2>
+    <form name="reg_form" id="reg_form" action="#" method="post">
+        <div class="register_wr">
+            <span id="closeForm">X</span>
+            <label>
+                Name<br>
+                <input type="text" name="name">
+                <span id="error_name"></span>
+            </label>
+            <label>
+                Last Name<br>
+                <input type="text" name="lastname">
+                <span id="error_lastname"></span>
+            </label>
+            <label>
+                Mail<br>
+                <input type="text" name="mail">
+                <span id="error_mail"></span>
+            </label>
+            <label>
+                Address<br>
+                <input type="text" name="address">
+                <span id="error_address"></span>
+            </label>
+            <label>
+                Password<br>
+                <input type="password" id="passowrd_value" name="password">
+                <span id="error_password"></span>
+            </label>
+            <label>
+                Confirm Password<br>
+                <input type="password" name="confirm_password">
+                <span id="error_confirm"></span>
+            </label>
+        </div>
+        <button type="submit">sign in</button>
+    </form>
+</div>
+<div class="login">
+    <h2>Login</h2>
+    <form name="auth" id="logform" action="#" method="post">
+        <div class="register_wr">
+            <span id="closelog">X</span>
+            <label>
+                login<br>
+                <input type="text" name="name">
+            </label>
+            <label>
+                Password<br>
+                <input type="password" id="" name="password">
+            </label>
+            <span class="login_error"></span>
+        </div>
+        <button type="submit">login</button>
+    </form>
+</div>
+<div class="header">
+    <div class="container">
+        <div class="header_top">
+            <div class="left">
+                <span>Welcom to the shop</span>
+                <span>Open hours:8.00-20.00</span>
+            </div>
+            <div id="users_block" class="right">
+                <div class="reg">
+                    <span id="register" style="cursor:pointer;">Register</span>
+                    <span id="login" style="cursor: pointer">Login</span>
+                </div>
+                <div class="log">
+                    <span class="user_name"></span>
+                    <a href="#account/" class="user_enter">enter</a>
+                    <span id="user_logout">logout</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="wrapper_header_center">
+    <div class="container">
+        <div class="header_center">
+            <div class="left">
+                <a href="#"><img src="/app/img/powermagazin.png"></a>
+            </div>
+            <a href="#shop/" style="color:red">GO TO THE SHOP</a>
+            <div class="right">
+                <div class="header_mail">
+                    <div class="icon_header">
+                        <i class="fa fa-phone"></i>
+                    </div>
+                    <div class="wrap_contact">
+                        <span class="phone">123-456-7890</span>
+                        <span class="mail">INFO@YOURSITE.COM</span>
+                    </div>
+                </div>
+                <div class="header_cart">
+                    <div class="icon_header"><i class="fa fa-shopping-cart"></i></div>
+                    <div class="wrap_contact">
+                        <a href="#basket/">
+                            <span class="name_cart">Your Cart</span><br>
+                            <span class="count_cart">0 ITEM</span><span class="total_price"> - $00.00</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="header_cart2">
+                    <div class="icon_header"><i class="fa fa-shopping-cart"></i></div>
+                    <span id="count_cart">0 ITEM</span>
+                    <div id="cart_list">
+                        <ul id="cart_items">
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="wrapper">
+
+</section>
+<div class="footer">
+    <div class="container">
+        <div class="footer_content">
+            <ul>
+                <li><img src="app/img/drinkpreneur_untitled-2.png" style="width: 200px ;display: inline-block;"></li>
+                <li>716 N. Ventura Rd</li>
+                <li>Oxnard, CA 93030 USA</li>
+                <li>Email: info@sann.net</li>
+                <li>Phone: (888) 519-9300</li>
+                <li>Intl: (805) 988-0640</li>
+                <li>Fax: (805) 278-0862</li>
+            </ul>
+            <ul>
+                <li><h3>USEFUL LINKS</h3></li>
+                <li><a href="">Home Page</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Distributor</a></li>
+                <li><a href="">PDF Catalogue</a></li>
+                <li><a href="">Careers</a></li>
+            </ul>
+            <ul>
+                <li><h3>COMMUNITY</h3></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Athletes</a></li>
+                <li><a href="">Event Gallery</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
